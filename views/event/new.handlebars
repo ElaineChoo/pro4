@@ -1,0 +1,31 @@
+<div class="row" style="margin:0 1.5rem; padding-top:1.5rem;">
+<h2>Create New Event</h2>
+</div>
+<form class="ui form" method="POST" action="/{{user.id}}/event" style="margin-left: 1.25rem">
+    <div class="field">
+        <input id="userid" name="userid" type="hidden" value="{{user.id}}" readonly/>
+    </div>
+
+    <div class="field" style="margin-bottom: 1rem">
+        <label for="event_name" style="font-weight: 600">Event Name: </label>
+        <input id="event_name" name="event_name" type="text" placeholder="Enter Event Name" style="width: 50%" />
+    </div>
+
+    <div class="field" style="margin-bottom: 1rem">
+        <label for="venue" style="font-weight: 600">Event Venue: </label>
+        <input id="venue" name="venue" type="text" placeholder="Enter Event Venue" style="width: 50%"/>
+    </div>
+
+    <div class="field" style="margin-bottom: 1rem">
+        <label for="start_date" style="font-weight: 600">Event Start Date:</label>
+        <input id="start_date" name="start_date" type="text" placeholder="Enter Event Start Date" style="width: 50%"/>
+    </div>
+
+    <div class="field" style="margin-bottom: 1rem">
+        <label for="no_of_days" style="font-weight: 600">Event Duration <em>(in day(s) [Min 1 day])</em>:</label>
+        <input id="no_of_days" name="no_of_days" type="text" placeholder="Enter Event Duration" style="width: 50%"/>
+    </div>
+    <br />
+    <input class="ui button primary" name="Submit" type="submit" style="margin-bottom: 1rem"/>
+</form>
+

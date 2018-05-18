@@ -1,0 +1,14 @@
+Fonts used in this design;
+
+Font: Asap, 
+Author: Omnibus Type, 
+Url: http://www.fontsquirrel.com/fonts/asap; 
+
+Font: Blogger Sans, 
+Author: FirstSiteGuide, 
+Url: http://www.fontsquirrel.com/fonts/blogger-sans; 
+
+Font: Metropolis, 
+Author: Chris Simpson, 
+Url: https://www.fontsquirrel.com/fonts/metropolis; 
+

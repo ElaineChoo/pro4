@@ -1,0 +1,26 @@
+<div class="ui main text container" style="margin:0 1.5rem; padding-top:1.5rem;">
+    <h1>Hello, {{user.username}}</h1>
+
+    <h2>Your Events</h2>
+    <button class="ui button primary" type="submit" target="_self" onclick="window.location.href='/{{user.id}}/event/new'">New Event</button>
+    <table class="ui striped celled table" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Venue</th>
+                <th>Start Date</th>
+                <th>Duration</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#each event}}
+            <tr>
+                <td class="selectable"><a href="event/{{this.id}}/session">{{this.event_name}}</a></td>
+                <td>{{this.venue}}</td>
+                <td>{{this.start_date}}</td>
+                <td>{{this.no_of_days}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,18 @@
+<div class="ui main text container" style="text-align:center;">
+    <div style="padding-top:20vh;">
+        <h1>Login Form</h1>
+        <form class="ui form" method='POST' action="/user/login">
+            <div class="field">
+                <label>Email:</label>
+                <input type='text' name='email' placeholder="Enter your email" style="width:20%; text-align:center;"/>
+            </div>
+            <div class="field">
+                <label>Password:</label>
+                <input type='password' name='password' placeholder="Enter your password" style="width:20%; text-align:center;"/>
+            </div>
+            <input class="ui button primary" type="submit" value="Submit"/>    
+        </form>
+        <button class="ui button primary" type="submit" target="_self" onclick="window.location.href='/'" style="margin:1.5rem auto; display:block;">Home</button>
+        <a href="/user/new">Do not have an account? Register Here</a>
+    </div>
+</div>
